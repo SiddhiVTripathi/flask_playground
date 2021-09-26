@@ -1,5 +1,6 @@
 from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
+from time import sleep
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'fcb4d56dc328bbb269db411972547c41'
@@ -46,6 +47,7 @@ def login():
     if form.validate_on_submit():
         if form.email.data == 'admin@blog.com' and form.password.data == 'password':
             flash("Welcome back")
+            sleep(5)
             return redirect(url_for('home'))
         else:
             flash("Please check your username ans password", "danger")

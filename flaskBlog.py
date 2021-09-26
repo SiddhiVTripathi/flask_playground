@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
 from time import sleep
 from datetime import datetime
-from flask_sqlalchemy import fSQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'fcb4d56dc328bbb269db411972547c41'

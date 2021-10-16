@@ -7,8 +7,8 @@ app.config['SECRET_KEY'] = 'fcb4d56dc328bbb269db411972547c41'
 posts = [
     {
         'author' : 'Siddhi',
-        'title' : 'First Blog',
-        'content' : 'First Post content',
+        'title' : 'Neural Style Transfer',
+        'content' : '''Implementation of Neural Style Transfer inspired from code available at official tensorflow website. Implemented single style transfer.''',
         'date_posted' : 'April 14, 2020'
     },
 
